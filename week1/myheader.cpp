@@ -49,7 +49,7 @@ void Student::addHP(HP hocPhan){
     this->danhSachMonHoc.push_back(hocPhan);
 }
 void Student::hienThiHP(){
-    cout << "Danh sach mon hoc ";
+    cout << "Danh sach mon hoc cua sinh vien " << this->name << endl;
     for (size_t i = 0; i < this->danhSachMonHoc.size(); ++i) {
         HP a;
         a = this->danhSachMonHoc[i];
