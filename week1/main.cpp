@@ -8,4 +8,5 @@ int main(){
     hocPhan.getter();
     hocPhan.hienThi();
     a.addHP(hocPhan);
+    a.hienThiHP();
 }
