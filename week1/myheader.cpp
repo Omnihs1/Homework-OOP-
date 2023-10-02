@@ -1,6 +1,7 @@
 #include "myheader.h"
 #include <iostream>
 #include <vector>
+using namespace std;
 
 void Student::getter() {
     cout << "Type id of student" << endl;
