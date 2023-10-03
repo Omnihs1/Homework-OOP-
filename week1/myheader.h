@@ -11,9 +11,9 @@ protected:
     int tinChi;
 public:
     // virtual function 
-    void getter();
-    void setter();
-    void hienThi();
+    virtual void getter();
+    virtual void setter();
+    virtual void hienThi();
 };
 
 class HP : public Subject{
