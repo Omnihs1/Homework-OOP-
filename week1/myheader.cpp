@@ -102,6 +102,32 @@ void Lecturer::addHP(HP hocPhan) {
     this->danhSachGiangDay.push_back(hocPhan);
 }
 
+void Subject::getter() {
+    cout << "Type maHP " << endl;
+    cin >> this->maHP;
+    cout << "Type so tin chi " << endl;
+    cin >> this->tinChi;
+}
+
+void Subject::setter() {
+    string temp;
+    while(temp != "yes" || temp != "no"){
+        cout << "Do you want to change ? (yes/no) " << endl;
+        cin >> temp;
+    }
+    if(temp == "yes"){
+        cout << "Change maHP of HP" << endl;
+        cin >> this->maHP;
+        cout << "Change so tin chi of HP: " << endl;
+        cin >> this->tinChi;
+    }
+}
+
+void Subject::hienThi() {
+    cout << "maHP " << this->maHP << endl;
+    cout << "so tin chi " << this->tinChi << endl;
+}
+
 void HP::getter() {
     cout << "Type maHP " << endl;
     cin >> this->maHP;
